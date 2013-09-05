@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <iostream>
 #include <string>
+#include <ctime>
 
 #include "cputests.h"
 #include "IoFactory.hpp"

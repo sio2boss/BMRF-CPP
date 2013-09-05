@@ -6,7 +6,6 @@ set (bmrfcpp_VERSION_MINOR 0)
 find_package(Boost COMPONENTS system thread REQUIRED)
 find_package(HDF5 REQUIRED)
 include(CMakeForceCompiler)
-##find_package(OpenMP REQUIRED)
 
 
 ###### Compiler Optimizations

@@ -20,8 +20,15 @@ Open MATLAB and cd to ./matlab
 
 	demoCpu
 
+or run manually from ./matlab directory
+
+    ../build/bmrf-cpu --ppi sim/ppi.mat --genes sim/genes.mat --seeds sim/seed_gene_ids.mat --output asdf.mat --multi
+
 Additionally, a slighly modified version of BMRF (matlab release: http://www.cbil.ece.vt.edu/software.htm) can be run with
 
 	demoMatlab
 
+## Using EC2
+
+This repo includes portions of https://github.com/sio2boss/VagrantSeed which will allow you to run easily on EC2.  Follow the "Setting up Vagrant on your machine" step on the VagrantSeed github site.  Or you could setup your own Ubuntu machine and use the provision script in ./devops
 

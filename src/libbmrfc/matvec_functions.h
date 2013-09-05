@@ -9,6 +9,7 @@
 #define MATVEC_FUNCTIONS_H_
 
 #include "matvec.h"
+#include <string>
 
 /**
  * pretty printing

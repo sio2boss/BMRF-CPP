@@ -8,6 +8,7 @@
 #ifndef IOFACTORY_HPP_
 #define IOFACTORY_HPP_
 
+#include <string>
 #include "matvec.h"
 
 class IoFactory {
