@@ -3,6 +3,9 @@
 
 Vagrant.configure("2") do |config|
   config.vm.provider :aws do |aws|
-    aws.ami = "ami-d0f89fb9"
+    # Ubuntu 12.04.2 LTS 64-bit
+    #aws.ami = "ami-d0f89fb9"
+    # Ubuntu 12.10 64-bit
+    aws.ami = "ami-27591a4e"
   end
 end

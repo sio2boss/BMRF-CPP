@@ -14,6 +14,8 @@ Simply running the following will run cmake and build the code
 
     make
 
+Builds successfully on Ubuntu 12.04.2, 12.10, and OS X 10.8.4
+
 ## Running
 
 Open MATLAB and cd to ./matlab

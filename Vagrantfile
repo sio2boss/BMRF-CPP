@@ -1,12 +1,14 @@
 Vagrant.configure('2') do |config|
-  config.vm.box = 'ubuntu'
+  config.vm.box = 'bmrf'
 
   config.vm.provider :aws do |aws, override|
     aws.region = "us-east-1"
     aws.security_groups = "quick-start-1" 
     
+    # Bargen basement
+    aws.instance_type = "t1.micro"
     # 8 cores @ $0.82/h
-    aws.instance_type = "m3.2xlarge"
+    #aws.instance_type = "m3.2xlarge"
     # 32 cores @ $2.40/h
     # aws.instance_type = "cc2.8xlarge"
 

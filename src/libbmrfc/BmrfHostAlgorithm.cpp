@@ -402,7 +402,7 @@ bool BmrfHostAlgorithm::runHost() {
 			}
 		}
 
-		Uint1dArray BMRF_network_ID(MAX_SUBNETWORK_SIZE);
+		Uint1dArray BMRF_network_ID(ppi.x);
 		BMRF_network_ID.shrink(0);
 		for (int i = 0; i < dect_gid_all.x; ++i) {
 			if (freq_dect[i] >= thrd_freq)
@@ -411,7 +411,7 @@ bool BmrfHostAlgorithm::runHost() {
 		float BMRF_network_score = -1.0f
 				* mrfnetscore(geneIdArray1d, BMRF_network_ID, zscore0, ppi);
 
-// Roll-up all good subnetworks
+		// Roll-up all good subnetworks
 		printf("BMRF_network_ID @ %f = ", BMRF_network_score);
 		BMRF_network_ID.print(BMRF_network_ID.x);
 

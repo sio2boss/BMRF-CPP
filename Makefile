@@ -10,12 +10,16 @@ clean:
 
 # Simple makefile showing the vagrant commands needed
 setup:
+	# clear stuff
+	rm -rf .vagrant
+	vagrant box remove bmrf aws
+	
 	# build box
 	cd devops/ubuntu-ec2; make
 	# make sure vagrant aws plugin is installed
 	vagrant plugin install vagrant-aws
 	# add box to vagrant
-	vagrant box add ubuntu devops/ubuntu.box --provider=aws
+	vagrant box add bmrf devops/bmrf.box --provider=aws
 
 up:
 	vagrant up --provider=aws

@@ -1,3 +1,5 @@
 
 all:
-	tar cvfz ../ubuntu.box ./metadata.json ./Vagrantfile
+	tar cvfz ../bmrf.box ./metadata.json ./Vagrantfile
+
+.PHONY: all
