@@ -9,7 +9,6 @@ typedef struct {
 	std::string genesFilename;
 	std::string seedsFilename;
 	std::string outputFilename;
-	int device;
 	int distance;
 	int temperature;
 	int bootstraps;
@@ -22,7 +21,6 @@ typedef struct {
 				<< std::endl;
 		std::cout << "  Seed Genes file      : " << this->seedsFilename << std::endl;
 		std::cout << "  Output file          : " << this->outputFilename << std::endl;
-		std::cout << "  Device               : " << this->device << std::endl;
 		std::cout << "  Distance             = " << this->distance << std::endl;
 		std::cout << "  Temperature          = " << this->temperature << std::endl;
 		std::cout << "  Bootstraps           = " << this->bootstraps << std::endl;

@@ -48,7 +48,6 @@ int main(int argc, char *argv[]) {
 		params->bootstraps = atoi(args.bootstraps);
 	else
 		params->bootstraps = DEFAULT_BOOTSTRAPS;
-	params->device = 0;
 	params->multi = args.multi;
 
 	// Make sure files exist and are readable
