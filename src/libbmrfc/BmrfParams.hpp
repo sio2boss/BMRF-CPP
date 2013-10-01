@@ -12,7 +12,7 @@ typedef struct {
 	int distance;
 	int temperature;
 	int bootstraps;
-	bool multi;
+	int multi;
 
 	bool validate() {
 		std::cout << "Bmrf Parameters:" << std::endl;
@@ -24,7 +24,7 @@ typedef struct {
 		std::cout << "  Distance             = " << this->distance << std::endl;
 		std::cout << "  Temperature          = " << this->temperature << std::endl;
 		std::cout << "  Bootstraps           = " << this->bootstraps << std::endl;
-		std::cout << "  Multiple Threads     = " << std::boolalpha << this->multi << std::endl;
+		std::cout << "  Multiple Threads     = " << this->multi << std::endl;
 
 		return true;
 	}

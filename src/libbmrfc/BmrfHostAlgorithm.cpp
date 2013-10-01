@@ -154,7 +154,7 @@ bool BmrfHostAlgorithm::run() {
 
 	std::srand(std::time(0));
 
-	if (params->multi == true)
+	if (params->multi > 0)
 		return runHostMulti();
 	else
 		return runHost();
@@ -561,7 +561,7 @@ bool BmrfHostAlgorithm::runHostMulti() {
 	fflush(stdout);
 
 	// Add some tasks to the pool.
-	boost::threadpool::pool bootstrap_tp(8);
+	boost::threadpool::pool bootstrap_tp(params->multi);
 	for (int bootstrap = 0; bootstrap < params->bootstraps; ++bootstrap) {
 		for (int seed = 0; seed < seedGeneIdArray1d.x; ++seed) {
 			boost::shared_ptr<Job> job(

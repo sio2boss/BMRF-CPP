@@ -1,5 +1,5 @@
 Usage:
-    bmrf-cpu --ppi=FILENAME --genes=FILENAME --seeds=FILENAME --output=FILENAME [--distance=INTEGER] [--temperature=INTEGER] [--bootstraps=INTEGER] --multi
+    bmrf-cpu --ppi=FILENAME --genes=FILENAME --seeds=FILENAME --output=FILENAME [--distance=INTEGER] [--temperature=INTEGER] [--bootstraps=INTEGER] [--multi=INTEGER]
     bmrf-cpu -h | --help | --version
 
 Options:
@@ -12,5 +12,5 @@ Options:
   --distance INTEGER    Distance for network search [Default 2].
   --temperature INTEGER The Temperature controls the rate of convergence in SA [default 1].
   --bootstraps INTEGER  Number of random re-selections to perform [default 100].
-  --multi               Enable multiple threads.
+  --multi INTEGER       Use N threads
 

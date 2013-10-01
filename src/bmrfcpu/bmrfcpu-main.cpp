@@ -48,7 +48,10 @@ int main(int argc, char *argv[]) {
 		params->bootstraps = atoi(args.bootstraps);
 	else
 		params->bootstraps = DEFAULT_BOOTSTRAPS;
-	params->multi = args.multi;
+	if (args.multi != NULL)
+		params->multi = atoi(args.multi);
+	else
+		params->multi = 0;
 
 	// Make sure files exist and are readable
 	if (params->validate() == false) {

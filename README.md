@@ -24,7 +24,7 @@ Open MATLAB and cd to ./matlab
 
 or run manually from ./matlab directory
 
-    ../build/bmrf-cpu --ppi sim/ppi.mat --genes sim/genes.mat --seeds sim/seed_gene_ids.mat --output asdf.mat --multi
+    ../build/bmrf-cpu --ppi sim/ppi.mat --genes sim/genes.mat --seeds sim/seed_gene_ids.mat --output asdf.mat --multi 8
 
 Additionally, a slighly modified version of BMRF (matlab release: http://www.cbil.ece.vt.edu/software.htm) can be run with
 
